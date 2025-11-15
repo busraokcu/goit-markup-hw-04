@@ -91,7 +91,7 @@ header {
 .main-header {
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
-    url(/images/7c8d46d47e83b6c8ee4603ea892aa8aaebb3c5fe.jpg);
+    url(../images/7c8d46d47e83b6c8ee4603ea892aa8aaebb3c5fe.jpg);
   background-size: cover;
 }
 .banner {
@@ -250,11 +250,11 @@ header {
 /*-------------Team Member Social Media SVG -----------*/
 .social-media{
   display:flex;
-  gap: 8px;
+  gap: 24px;
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  margin:8px;
+  margin: 8px;
 }
 .social-media .social-media-icons{
   width: 40px;
@@ -264,7 +264,9 @@ header {
   justify-content: center;
   background-color: #4d5ae5;
   border-radius: 50%;
-  margin-bottom: 32px ;
+  margin-bottom: 32px ; 
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon{
   width: 16px;
@@ -272,6 +274,7 @@ header {
 }
 .social-media .social-media-icons:hover{
   background-color: #404bbf;
+  transform: translateY(0);
 }
 /*-----------------------------------*/
 
@@ -307,9 +310,13 @@ header {
   width: 40px;
   height: 40px;
   margin-top: 16px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .footer-social-icon:hover{
   background-color: #31D0AA;
+  transform: translateY(0);
 }
 .footer-social-icon .icon{
   width: 24px;
